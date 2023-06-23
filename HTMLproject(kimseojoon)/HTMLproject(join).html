@@ -1,0 +1,143 @@
+<!doctype html>
+   <html>
+    <head>
+         <!-- -->   /* */
+        <title>
+            java study room
+        </title>
+        
+    
+        <style>
+            
+    
+            #page-wrapper {
+            overflow: hidden;
+            background: rgba(60,60,60, 0.9);
+            margin: 40px 0; padding: 15px 15px;
+            border-radius: 4px;
+            box-shadow: 0 5px 10px rgba(100, 100, 100, 0.5);
+            width: 1200px
+           
+        
+            }
+            
+            body {
+                background: url(codingbackimg.png) repeat center center fixed;
+                  -webkit-background-size: cover;
+                  -moz-background-size: cover;
+                  -o-background-size: cover;
+                  background-size: cover;
+                  width: 1200px;
+                  margin: 0 auto;
+                 
+            }
+            #main-header {padding: 40px 50px; background-image: url(codingimg1.png);
+                 background-size: 100%; width: 1100px;
+                 height: 90px; border-radius: 4px;
+                 box-shadow: 0 0 2px rgba(0,0,0,7);
+            }
+            .master-title{
+                 font-size: 30px;
+                 color: white;
+                 text-shadow:  5px 5px 5px darkgreen;
+            }
+            .master-description {
+                 font-size: 15px; font-weight: 500;
+                 color: white;
+                 text-shadow:  5px 5px 5px darkgreen;
+            }
+               
+        </style>
+        
+        <style>
+            #fieldset {
+                position: relative;
+                width:800px;
+            }
+            #signintitle {
+                color: white;
+                text-shadow:  3px 3px 3px silver;
+            }
+            .category {
+                color: white;
+            }
+        </style>
+        
+        <script>
+            alert('반갑습니다. 자바공부방에 오신걸 환영합니다.!!');       //* 가입창 환영문구 출력  *//
+        </script>
+        
+     </head> 
+    <body link="black" vlink="black" alink="red"> 
+        <div id="page-wrapper"> 
+            <header id="main-header">
+                <h1 class="master-title">JAVA STUDY ROOM</h1>
+                <h2 class="master-description">자바를 잡아보자 </h2>
+            </header>
+            <form>
+            <fieldset id="fieldset">
+                <legend id="signintitle"><h1>개인 정보 입력</h1></legend>
+                <table border="0">
+                    <tr>
+                        <td class="category"><label for="id">아&nbsp;이&nbsp;디:</label></td>  
+                        <td><input id="id" type="text" name="id" value=""><input type="button" name="scan" value="ID중복검사"></td>
+                    </tr>
+                    <tr>
+                        <td class="category"><label for="birth">생년월일:</label></td>
+                        <td><input id="birth" type="text" name="birth" value="연도-월-일"></td>
+                    </tr>
+                    <tr>
+                        <td class="category">성&nbsp;&nbsp;별:</td>
+                        <td class="category"><label for="man">남성</label><input id="man" type="radio" name="sex" value="m"><label for="woman">여성</label><input id="woman" type="radio" name="sex" value="w"></td>
+                    </tr>
+                    <tr>
+                        <td class="category"><label for="email">E-mail</label></td>
+                        <td><input id="email" type="text" name="email" value=""></td>
+                    </tr>
+                    <tr>
+                        <td class="category">메일수신:</td>
+                        <td class="category"><label for="confirm">수신동의</label><input id="confirm" type="radio" name="mail" value="y"><label for="deny">수신거부</label><input id="deny" type="radio" name="mail" value="n"></td>
+                    </tr>
+                    <tr>
+                        <td class="category"><label for="phone">핸드폰:</label></td>
+                        <td><select>
+                              <option>010</option>
+                              <option>011</option>
+                              <option>016</option>
+                              <option>018</option>
+                           </select> 
+                        <input id="phone" type="password" name="phone" value="">-
+                        <input  type="password" name="phone" value=""></td>
+                    </tr>
+                    <tr>
+                        <td class="category"><label for="job">직업:</label></td>
+                        <td><select id="job">
+                              <option>회사원</option>
+                              <option>자영업</option>
+                              <option>주부</option>
+                              <option>학생</option>
+                           </select> </td>
+                    </tr>
+                    <tr>
+                        <td class="category">취미:</td>
+                        <td class="category"><label for="shoping">쇼핑</label><input id="shoping" type="checkbox" name="shoping" ><label for="surfing">인터넷</label><input id="surfing" type="checkbox" name="surfing">
+                        <label for="music">음악감상</label><input id="music" type="checkbox" name="music" ><label for="reading">독서</label><input id="reading" type="checkbox" name="reading"><label for="sports">스포츠</label><input id="sports" type="checkbox" name="sports"></td>
+                    </tr>
+                    <tr>
+                        <td class="category"><label for="introduce">자기&nbsp;소개:</label></td>  
+                        <td><textarea rows="20" cols="70" id="introduce" type="text" name="introduce"></textarea></td>
+                    </tr>
+            
+                </table>
+            </fieldset>
+            <input  type="submit" name="submit" value="등록">
+            <input  type="reset" name="reset" value="초기화">
+        </form>
+            <footer>
+            <div id="main-footer">  
+            <a href="HTMLproject(index).html">Created By Kim Seo joon</a>
+            </div>
+            </footer>
+        </div>    
+    </body>
+</html>
